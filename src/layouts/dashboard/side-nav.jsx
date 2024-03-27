@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import ArrowTopRightOnSquareIcon from '@heroicons/react/24/solid/ArrowTopRightOnSquareIcon';
 import ChevronUpDownIcon from '@heroicons/react/24/solid/ChevronUpDownIcon';
-import { Logo } from 'src/components/logo';
-
 import {
   Box,
   Button,
