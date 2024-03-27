@@ -1,5 +1,5 @@
 import React from 'react'
-import {Pic} from 'src/assets/asset.png'
+import Pic from 'src/assets/asset.png'
 import {
     Box,
     Typography,

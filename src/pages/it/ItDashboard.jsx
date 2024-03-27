@@ -1,5 +1,5 @@
 import React from 'react'
-import {Pic} from 'src/assets/uc.png'
+import Pic from 'src/assets/uc.png'
 import { Box, Typography, Unstable_Grid2 as Grid } from '@mui/material'; 
 
 
