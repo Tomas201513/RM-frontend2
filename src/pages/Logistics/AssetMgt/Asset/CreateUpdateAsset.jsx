@@ -524,8 +524,8 @@ function CreateUpdateAsset({  selectedData, editable, setEditable, name  }) {
                                                 error={Boolean(touched.budget && errors.budget)}
                                                 helperText={touched.budget && errors.budget}
                                                 >
-                                                {budgetData.map((budget) => (
-                                                    <MenuItem value={budget._id}>{`${budget?.project?.donorCode}${budget?.budgetCode}`}</MenuItem>
+                                                {budgetData?.map((budget) => (
+                                                    <MenuItem value={budget?._id}>{`${budget?.project?.donorCode}${budget?.budgetCode}`}</MenuItem>
                                                 ))}
                                                 </Select>
                                             </FormControl>

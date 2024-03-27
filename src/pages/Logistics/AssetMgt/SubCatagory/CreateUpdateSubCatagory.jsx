@@ -225,7 +225,7 @@ return (
                             helperText={touched.catagory && errors.catagory}
                             >
                             {catagoryData?.map((catagory) => (
-                                <MenuItem value={catagory._id}>{catagory.catagory}</MenuItem>
+                                <MenuItem value={catagory?._id}>{catagory?.catagory}</MenuItem>
                             ))}
                             </Select>
                         </FormControl>

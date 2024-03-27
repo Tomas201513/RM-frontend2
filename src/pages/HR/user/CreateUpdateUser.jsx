@@ -254,7 +254,7 @@ function CreateUpdateUser({ selectedData, editable, setEditable, name }) {
                       helperText={touched.office && errors.office}
                     >
                       {officeData?.map((item) => (
-                        <MenuItem value={item._id}>{item.officeAreaName}</MenuItem>
+                        <MenuItem value={item?._id}>{item?.officeAreaName}</MenuItem>
                       ))}
                     </Select>
                   </FormControl>

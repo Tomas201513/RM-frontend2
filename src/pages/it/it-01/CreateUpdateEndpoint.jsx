@@ -194,8 +194,8 @@ function CreateUpdateEndpoint({  selectedData, editable, setEditable, name  }) {
                                                 error={Boolean(touched.asset && errors.asset)}
                                                 helperText={touched.asset && errors.asset}
                                                 >
-                                                {laptops.map((assete) => (
-                                                    <MenuItem value={assete._id}>{assete?.type}</MenuItem>
+                                                {laptops?.map((assete) => (
+                                                    <MenuItem value={assete?._id}>{assete?.type}</MenuItem>
                                                 ))}
                                                 </Select>
                                             </FormControl>

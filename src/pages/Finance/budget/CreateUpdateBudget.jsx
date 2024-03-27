@@ -188,8 +188,8 @@ const CreateUpdateBudget = ({  selectedData,  name ,     editable, setEditable,}
                                                         error={Boolean(touched.project && errors.project)}
                                                         helperText={touched.project && errors.project}
                                                         >
-                                                        {projectData.map((project) => (
-                                                            <MenuItem value={project._id}>{project?.projectCode}</MenuItem>
+                                                        {projectData?.map((project) => (
+                                                            <MenuItem value={project?._id}>{project?.projectCode}</MenuItem>
                                                         ))}
                                                         </Select>
                                                     </FormControl>
@@ -364,8 +364,8 @@ const CreateUpdateBudget = ({  selectedData,  name ,     editable, setEditable,}
                                                         error={Boolean(touched.senario && errors.senario)}
                                                         helperText={touched.senario && errors.senario}
                                                         >
-                                                        {senarioData.map((senarioDataa) => (
-                                                            <MenuItem value={senarioDataa._id}>{senarioDataa?.SenarioCode}</MenuItem>
+                                                        {senarioData?.map((senarioDataa) => (
+                                                            <MenuItem value={senarioDataa?._id}>{senarioDataa?.SenarioCode}</MenuItem>
                                                         ))}
                                                         </Select>
                                                     </FormControl>

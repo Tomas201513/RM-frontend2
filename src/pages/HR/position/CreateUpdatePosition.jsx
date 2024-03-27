@@ -190,8 +190,8 @@ const CreateUpdatePosition = ({ selectedData, editable, setEditable, name}) => {
                                         helperText={touched.department && errors.department}
                                                 
                                         >
-                                        {departmentData.map((department) => (
-                                                    <MenuItem key={department._id} value={department._id}>{department.dptName}</MenuItem>
+                                        {departmentData?.map((department) => (
+                                                    <MenuItem key={department?._id} value={department?._id}>{department?.dptName}</MenuItem>
                                                     ))}
                                         </Select>
                                     </FormControl>

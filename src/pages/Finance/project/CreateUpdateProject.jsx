@@ -366,7 +366,7 @@ const CreateUpdateProject = ({ selectedData, name}) => {
                                                       helperText={touched.projectManager && errors.projectManager}
                                                       >
                                                       {userData?.map((userDataa) => (
-                                                          <MenuItem value={userDataa._id}>{userDataa?.email}</MenuItem>
+                                                          <MenuItem value={userDataa?._id}>{userDataa?.email}</MenuItem>
                                                       ))}
                                                       </Select>
                                                   </FormControl>
@@ -388,7 +388,7 @@ const CreateUpdateProject = ({ selectedData, name}) => {
                                                       helperText={touched.country && errors.country}
                                                       >
                                                       {countryData?.map((countryDataa) => (
-                                                          <MenuItem value={countryDataa._id}>{countryDataa?.countryName}</MenuItem>
+                                                          <MenuItem value={countryDataa?._id}>{countryDataa?.countryName}</MenuItem>
                                                       ))}
                                                       </Select>
                                                   </FormControl>
