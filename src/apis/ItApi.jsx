@@ -2,7 +2,7 @@ import axios from "axios";
 import { TokenJson } from "./token/AuthToken";
 import axiosInstance from "src/utils/useAxiosInterceptors";
 
-const api = "http://127.0.0.1:8000/api/its/";
+const api = `https://rm-backend-reop.onrender.com/api/its/`;
 
 export const GetIt = async () => {
     if (localStorage.getItem("accessToken")) {

@@ -2,8 +2,8 @@ import axios from "axios";
 import { TokenJson } from "./token/AuthToken";
 import axiosInstance from "src/utils/useAxiosInterceptors";
 
-const api2 = "http://127.0.0.1:8000/api/subCatagories/";
-const api3 = "http://127.0.0.1:8000/api/subCatagories/some";
+const api2 = `https://rm-backend-reop.onrender.com/api/subCatagories/`;
+const api3 = `https://rm-backend-reop.onrender.com/api/subCatagories/some`;
 
 export const GetSubCatagory = async () => {
     if (localStorage.getItem("accessToken")) {
