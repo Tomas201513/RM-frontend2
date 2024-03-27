@@ -1,5 +1,5 @@
 import React from 'react'
-import Pic from 'src/assets/acted2.png'
+import {Pic} from 'src/assets/acted2.png'
 
 import { Box, Typography, Unstable_Grid2 as Grid } from '@mui/material';
 import { Logo } from 'src/components/logo';
