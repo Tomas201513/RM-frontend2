@@ -26,7 +26,7 @@ function Home() {
                             container
                             spacing={3}
                         >
-                        <img src={Pic} alt="Wavy" />
+                        Pic &&<img src={Pic} alt="Wavy" />
 
                             {/* <Grid
                                 xs={12}

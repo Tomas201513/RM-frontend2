@@ -10,7 +10,7 @@ function ItDashboard() {
     <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '50vh', width: '50vw' }}>
 
 
-            <img src={Pic} alt="Wavy" style={{ width: '60%', objectFit: 'cover' }} />
+           Pic && <img src={Pic} alt="Wavy" style={{ width: '60%', objectFit: 'cover' }} />
 
 
     </Box>
