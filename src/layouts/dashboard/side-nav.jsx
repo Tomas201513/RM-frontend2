@@ -16,12 +16,13 @@ import {
 } from '@mui/material';
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import useResponsive from 'src/hooks/useResponsive';
-import { Logo } from 'src/components/logo';
+// import { Logo } from 'src/components/logo';
 // import { Scrollbar } from 'src/components/scrollbar';
 // import { Scrollbar } from '../../components/scrollbar';
 import { adminItems, attendantItems } from './config';
 import { SideNavItem } from './side-nav-item';
 import AuthContext from "src/context/AuthContext";
+import Pic from 'src/assets/acted2.png'
 
 
 export const SideNav = ({ open, onClose, setOpenNav, openNav }) => {

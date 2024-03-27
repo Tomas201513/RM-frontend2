@@ -1,5 +1,5 @@
 import React from 'react'
-// import Pic from 'src/assets/asset.png'
+import Pic from 'src/assets/asset.png'
 import {
     Box,
     Typography,
@@ -26,7 +26,7 @@ function Home() {
                             container
                             spacing={3}
                         >
-                        {/* Pic &&<img src={Pic} alt="Wavy" /> */}
+                        <img src={Pic} alt="Wavy" />
 
                             {/* <Grid
                                 xs={12}
