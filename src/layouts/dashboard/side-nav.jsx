@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import ArrowTopRightOnSquareIcon from '@heroicons/react/24/solid/ArrowTopRightOnSquareIcon';
 import ChevronUpDownIcon from '@heroicons/react/24/solid/ChevronUpDownIcon';
+import { Logo } from 'src/components/logo';
+
 import {
   Box,
   Button,
@@ -90,7 +92,7 @@ export const SideNav = ({ open, onClose, setOpenNav, openNav }) => {
           }}
           onClick={() => setOpenNav(!openNav)}
         >
-          <img src="/src/assets/acted2.png" alt="logo" width="50"/>
+          <img src={Pic} alt="logo" width="50"/>
             <Typography
               variant="h7"
               sx={{
