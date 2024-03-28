@@ -390,12 +390,12 @@ function CreateUpdateAsset({  selectedData, editable, setEditable, name  }) {
                                                 fullWidth
                                                 label="Accessories"
                                                 name="accessory"
-                                                value={values.price}
+                                                value={values.accessory}
                                                 onChange={handleChange}
                                                 onBlur={handleBlur}
                                                 disabled={!editable}
-                                                error={Boolean(touched.price && errors.price)}
-                                                helperText={touched.price && errors.price}
+                                                error={Boolean(touched.accessory && errors.accessory) }
+                                                helperText={touched.accessory && errors.accessory}
                                             />
                                         </Grid>
                                         <Grid
@@ -422,12 +422,12 @@ function CreateUpdateAsset({  selectedData, editable, setEditable, name  }) {
                                                 fullWidth
                                                 label="Supplier"
                                                 name="supplier"
-                                                value={values.price}
+                                                value={values.supplier}
                                                 onChange={handleChange}
                                                 onBlur={handleBlur}
                                                 disabled={!editable}
-                                                error={Boolean(touched.price && errors.price)}
-                                                helperText={touched.price && errors.price}
+                                                error={Boolean(touched.supplier && errors.supplier)}
+                                                helperText={touched.supplier && errors.supplier}
                                             />
                                         </Grid>
                                         <Grid
@@ -524,8 +524,8 @@ function CreateUpdateAsset({  selectedData, editable, setEditable, name  }) {
                                                 error={Boolean(touched.budget && errors.budget)}
                                                 helperText={touched.budget && errors.budget}
                                                 >
-                                                {budgetData?.map((budget) => (
-                                                    <MenuItem value={budget?._id}>{`${budget?.project?.donorCode}${budget?.budgetCode}`}</MenuItem>
+                                                {budgetData.map((budget) => (
+                                                    <MenuItem value={budget._id}>{`${budget?.project?.donorCode}${budget?.budgetCode}`}</MenuItem>
                                                 ))}
                                                 </Select>
                                             </FormControl>

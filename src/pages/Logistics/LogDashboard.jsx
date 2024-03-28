@@ -33,10 +33,12 @@ const LogDashboard = () => {
   }
   return (
   <>
-<Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mt: '15%', mr: '1%', mb: '5%',ml:'4%', height: '30%'}}>
+<Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2, mt: '15%', mr: '1%', mb: '5%',ml:'4%', height: '30%' }}>
 <Card sx={sx}>
       <Button onClick={() => { navigate('/app/general') }}  
       sx={{
+    height: '100%',
+    width: '100%',
     backgroundColor: 'transparent',
     '&:hover': {
       backgroundColor: 'transparent',
@@ -44,7 +46,7 @@ const LogDashboard = () => {
       
       <CardActionArea>
         <CardContent>
-          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 5 }}> 
+          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center', mb: 5, }}> 
 
           <DevicesIcon sx={{fontSize: 100}} />
           </Box>
@@ -60,7 +62,8 @@ const LogDashboard = () => {
     <Card sx={sx}>
       <Button 
       onClick={() => { navigate('/app/procurement') }} 
-        sx={{
+        sx={{height: '100%',
+        width: '100%',
     backgroundColor: 'transparent',
     '&:hover': {
       backgroundColor: 'transparent',
@@ -86,6 +89,8 @@ const LogDashboard = () => {
       <Button 
       // onClick={() => { navigate('/app/general') }} 
         sx={{
+          height: '100%',
+    width: '100%',
     backgroundColor: 'transparent',
     '&:hover': {
       backgroundColor: 'transparent',
@@ -111,6 +116,8 @@ const LogDashboard = () => {
       <Button 
       // onClick={() => { navigate('/app/general') }}
          sx={{
+          height: '100%',
+    width: '100%',
     backgroundColor: 'transparent',
     '&:hover': {
       backgroundColor: 'transparent',
@@ -137,6 +144,8 @@ const LogDashboard = () => {
       <Button 
       // onClick={() => { navigate('/app/general') }}  
        sx={{
+        height: '100%',
+    width: '100%',
     backgroundColor: 'transparent',
     '&:hover': {
       backgroundColor: 'transparent',
